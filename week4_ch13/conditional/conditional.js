@@ -13,7 +13,7 @@ if (a > 2) {
   console.log("a <= 2");
 }
 
-// 2. if...else if...else
+// 2. if...else if...else (조건이 복수개를 만족하면 맨 처음 조건만 만족)
 
 if (a > 2) {
   console.log("a > 2");
@@ -27,18 +27,9 @@ if (a > 2) {
 
 // 3. switch
 var mbti = "INFP";
-var val;
-
 switch (mbti) {
   case "INFP":
-    val = "INFP";
-    break;
   case "ENFP":
-    val = "ENFP";
-    break;
-  case "INFP":
-    val = "INFP";
-    break;
-  default:
-    val = "유효한 값이 아닙니다";
+  case "ISTJ":
+  default: //매칭되는게 없을 때 실행될 문장
 }
